@@ -51,10 +51,10 @@
 
             display-name = "mac";
             bindings = <
-&kp ESC    &kp Q        &kp W         &kp E        &kp R              &kp T      &kp Y             &kp U          &kp I              &kp O         &kp P           &kp BSPC
-&kp TAB    &lhm LALT A  &lhm LCTRL S  &lhm LGUI D  &lhm LEFT_SHIFT F  &kp G      &kp H             &rhm RSHIFT J  &rhm RGUI K        &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
-&kp GRAVE  &kp Z        &kp X         &kp C        &kp V              &kp B      &kp N             &kp M          &kp COMMA          &kp DOT       &kp FSLH        &kp BACKSLASH
-                                      &kp ESCAPE   &lt 2 RET          &kp TAB    &kp LA(LC(LGUI))  &lt 1 SPACE    &kp LA(BACKSPACE)
+&kp ESC    &kp Q        &kp W         &kp E        &kp R          &kp T      &kp Y             &kp U          &kp I              &kp O         &kp P           &kp BSPC
+&kp TAB    &lhm LALT A  &lhm LCTRL S  &lhm LGUI D  &lhm LSHIFT F  &kp G      &kp H             &rhm RSHIFT J  &rhm RGUI K        &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
+&kp GRAVE  &kp Z        &kp X         &kp C        &kp V          &kp B      &kp N             &kp M          &kp COMMA          &kp DOT       &kp FSLH        &kp BACKSLASH
+                                      &kp ESCAPE   &lt 2 RET      &kp TAB    &kp LA(LC(LGUI))  &lt 1 SPACE    &kp LA(BACKSPACE)
             >;
         };
 
