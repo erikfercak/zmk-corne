@@ -53,17 +53,17 @@
             bindings = <
 &kp ESC    &kp Q        &kp W         &kp E        &kp R      &kp T      &kp Y             &kp U         &kp I              &kp O         &kp P           &kp BSPC
 &kp TAB    &lhm LALT A  &lhm LCTRL S  &lhm LGUI D  &kp F      &kp G      &kp H             &rhm LSHFT J  &rhm RGUI K        &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
-&kp GRAVE  &kp Z        &kp X         &kp C        &kp V      &kp B      &kp N             &kp M         &kp COMMA          &kp DOT       &kp FSLH        &kp BACKSLASH
-                                      &kp ESCAPE   &lt 2 RET  &kp TAB    &kp LA(LC(LGUI))  &lt 1 SPACE   &kp LA(BACKSPACE)
+&kp GRAVE  &kp Z        &kp X         &kp C        &kp V      &kp B      &kp N             &kp M         &kp COMMA          &kp DOT       &kp FSLH        &kp MINUS
+                                      &kp LSHIFT   &lt 2 RET  &kp TAB    &kp LA(LC(LGUI))  &lt 1 SPACE   &kp LA(BACKSPACE)
             >;
         };
 
         num {
             bindings = <
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &kp N0  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp MINUS    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &kp EQUAL    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &kp N0  &trans  &trans       &trans  &trans  &trans
             >;
 
             label = "num";
