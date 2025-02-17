@@ -39,6 +39,80 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cmb_qa {
+            bindings = <&kp EXCL>;
+            key-positions = <1 13>;
+        };
+
+        cmb_ws {
+            bindings = <&kp AT>;
+            key-positions = <2 14>;
+        };
+
+        cmb_ed {
+            bindings = <&kp HASH>;
+            key-positions = <3 15>;
+        };
+
+        cmb_rf {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 16>;
+        };
+
+        cmb_tg {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
+        };
+
+        cmb_yh {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+        };
+
+        cmb_uj {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <7 19>;
+        };
+
+        cmb_ik {
+            bindings = <&kp ASTERISK>;
+            key-positions = <8 20>;
+        };
+
+        cmb_ol {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <9 21>;
+        };
+
+        cmb_pp {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <10 22>;
+        };
+
+        cmb_rt {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <4 5>;
+        };
+
+        cmb_yu {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <6 7>;
+        };
+
+        cmb_vb {
+            bindings = <&kp MINUS>;
+            key-positions = <28 29>;
+        };
+
+        cmb_nm {
+            bindings = <&kp EQUAL>;
+            key-positions = <30 31>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -51,10 +125,10 @@
 
             display-name = "mac";
             bindings = <
-&kp ESC    &kp Q        &kp W         &kp E        &kp R      &kp T                   &kp Y             &kp U         &kp I              &kp O         &kp P           &kp BSPC
-&kp TAB    &lhm LALT A  &lhm LCTRL S  &lhm LGUI D  &kp F      &kp G                   &kp H             &rhm LSHFT J  &rhm RGUI K        &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
-&kp GRAVE  &kp Z        &kp X         &kp C        &kp V      &kp B                   &kp N             &kp M         &kp COMMA          &kp DOT       &kp FSLH        &kp MINUS
-                                      &kp LSHIFT   &lt 2 RET  &kp LS(LA(LC(LGUI)))    &kp LA(LC(LGUI))  &lt 1 SPACE   &kp LA(BACKSPACE)
+&kp ESC    &kp Q        &kp W         &kp E        &kp R         &kp T                   &kp Y             &kp U         &kp I              &kp O         &kp P           &kp BSPC
+&kp TAB    &lhm LALT A  &lhm LCTRL S  &lhm LGUI D  &lhm LSHFT F  &kp G                   &kp H             &rhm LSHFT J  &rhm RGUI K        &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
+&kp GRAVE  &kp Z        &kp X         &kp C        &kp V         &kp B                   &kp N             &kp M         &kp COMMA          &kp DOT       &kp FSLH        &kp MINUS
+                                      &kp LSHIFT   &lt 2 RET     &kp LS(LA(LC(LGUI)))    &kp LA(LC(LGUI))  &lt 1 SPACE   &kp LA(BACKSPACE)
             >;
         };
 
@@ -98,6 +172,15 @@
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
