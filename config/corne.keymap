@@ -95,21 +95,25 @@
         cmb_er {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <4 3>;
+            require-prior-idle-ms = <200>;
         };
 
         cmb_ui {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <7 8>;
+            require-prior-idle-ms = <200>;
         };
 
         cmb_cv {
             bindings = <&kp MINUS>;
             key-positions = <28 27>;
+            require-prior-idle-ms = <200>;
         };
 
         cmb_mm {
             bindings = <&kp EQUAL>;
             key-positions = <31 32>;
+            require-prior-idle-ms = <200>;
         };
 
         cmb_inner_thumbs {
