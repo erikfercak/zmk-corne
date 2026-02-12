@@ -63,14 +63,14 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            display-name = "Base";
+            display-name = "base";
             bindings = <
 &kp ESC    &kp Q        &kp W         &kp E           &kp R         &kp T                   &kp Y             &kp U               &kp I            &kp O         &kp P           &kp BSPC
 &kp TAB    &lhm LALT A  &lhm LCTRL S  &lhm LGUI D     &lhm LSHFT F  &kp G                   &kp H             &rhm RIGHT_SHIFT J  &rhm RGUI K      &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
@@ -79,33 +79,29 @@
             >;
         };
 
-        navigation {
+        navnum {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Nav";
+            display-name = "navn";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6          &kp N7               &kp N8                 &kp N9          &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &rhm HOME LEFT  &rhm PAGE_DOWN DOWN  &rhm PAGE_UP UP_ARROW  &rhm END RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans               &trans                 &trans          &trans  &trans
-                        &trans  &trans  &trans    &trans          &trans               &trans
+&trans    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6          &kp N7               &kp N8                 &kp N9          &kp N0  &trans
+&kp PLUS  &trans  &trans  &trans  &trans  &trans    &rhm HOME LEFT  &rhm PAGE_DOWN DOWN  &rhm PAGE_UP UP_ARROW  &rhm END RIGHT  &trans  &kp MINUS
+&trans    &trans  &trans  &trans  &trans  &trans    &trans          &trans               &trans                 &trans          &trans  &trans
+                          &trans  &trans  &trans    &trans          &trans               &trans
             >;
-
-            label = "Nav";
         };
 
-        num_sym {
+        symbol {
             bindings = <
-&kp GRAVE             &kp EXCLAMATION  &kp AT_SIGN  &kp POUND                   &kp DOLLAR                        &kp PERCENT    &kp CARET  &kp AMPERSAND                       &kp ASTERISK                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp NON_US_BACKSLASH  &trans           &trans       &lhm LEFT_GUI LEFT_BRACKET  &lhm LEFT_SHIFT LEFT_PARENTHESIS  &trans         &trans     &rhm RIGHT_SHIFT RIGHT_PARENTHESIS  &rhm RIGHT_GUI RIGHT_BRACKET  &trans                &trans                 &trans
-&trans                &trans           &trans       &trans                      &trans                            &trans         &trans     &trans                              &trans                        &trans                &trans                 &trans
-                                                    &trans                      &trans                            &trans         &trans     &trans                              &trans
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN           &kp POUND                   &kp DOLLAR                        &kp PERCENT       &kp CARET        &kp AMPERSAND                       &kp ASTERISK                  &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS  &trans
+&trans     &lhm LALT PIPE   &lhm LCTRL LESS_THAN  &lhm LEFT_GUI LEFT_BRACKET  &lhm LEFT_SHIFT LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE  &rhm RIGHT_SHIFT RIGHT_PARENTHESIS  &rhm RIGHT_GUI RIGHT_BRACKET  &rhm RCTRL GREATER_THAN  &trans                 &trans
+&trans     &trans           &trans                &trans                      &trans                            &kp TILDE         &kp SLASH        &trans                              &trans                        &trans                   &trans                 &trans
+                                                  &trans                      &trans                            &trans            &trans           &trans                              &trans
             >;
-
-            label = "num_sym";
         };
 
         system {
@@ -115,7 +111,7 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Sys";
+            display-name = "System";
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none        &none   &none   &none  &bt BT_CLR_ALL  &none
 &none       &none         &none         &none         &none         &none           &none        &none   &none   &none  &none           &none
