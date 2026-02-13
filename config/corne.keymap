@@ -88,10 +88,10 @@
 
             display-name = "navn";
             bindings = <
-&kp F11   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &none           &kp NUMBER_1         &kp NUMBER_2           &kp NUMBER_3    &kp NUMBER_4  &kp N5
-&kp PLUS  &trans  &trans  &trans  &trans  &none      &rhm HOME LEFT  &rhm PAGE_DOWN DOWN  &rhm PAGE_UP UP_ARROW  &rhm END RIGHT  &none         &kp MINUS
-&kp F12   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &none           &kp NUMBER_6         &kp NUMBER_7           &kp NUMBER_8    &kp NUMBER_9  &kp N0
-                          &trans  &trans  &trans     &trans          &trans               &trans
+&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp PLUS        &kp NUMBER_1         &kp NUMBER_2           &kp NUMBER_3    &kp NUMBER_4  &kp N5
+&none    &trans  &trans  &trans  &trans  &none      &rhm HOME LEFT  &rhm PAGE_DOWN DOWN  &rhm PAGE_UP UP_ARROW  &rhm END RIGHT  &none         &none
+&kp F12  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp MINUS       &kp NUMBER_6         &kp NUMBER_7           &kp NUMBER_8    &kp NUMBER_9  &kp N0
+                         &trans  &trans  &trans     &trans          &trans               &trans
             >;
         };
 
