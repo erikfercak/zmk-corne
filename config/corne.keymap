@@ -55,7 +55,7 @@
         compatible = "zmk,combos";
 
         cmb_inner_thumbs {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <38 39>;
         };
     };
@@ -75,11 +75,22 @@
 &kp ESC    &kp Q        &kp W         &kp E           &kp R         &kp T                   &kp Y             &kp U               &kp I            &kp O         &kp P           &kp BSPC
 &kp TAB    &lhm LALT A  &lhm LCTRL S  &lhm LGUI D     &lhm LSHFT F  &kp G                   &kp H             &rhm RIGHT_SHIFT J  &rhm RGUI K      &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
 &kp EQUAL  &kp Z        &kp X         &kp C           &kp V         &kp B                   &kp N             &kp M               &kp COMMA        &kp DOT       &kp FSLH        &kp MINUS
-                                      &kp LEFT_ARROW  &lt 1 RET     &kp LS(LA(LC(LGUI)))    &kp LA(LC(LGUI))  &lt 2 SPACE         &kp RIGHT_ARROW
+                                      &kp LEFT_ARROW  &lt 2 RET     &kp LS(LA(LC(LGUI)))    &kp LA(LC(LGUI))  &lt 1 SPACE         &kp RIGHT_ARROW
             >;
         };
 
-        navnum {
+        num {
+            bindings = <
+&trans  &kp FSLH        &kp N7  &kp N8  &kp N9   &kp ASTERISK    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp MINUS       &kp N4  &kp N5  &kp N6   &kp PLUS        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp UNDERSCORE  &kp N1  &kp N2  &kp N3   &kp EQUAL       &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp N0  &kp DOT  &trans          &trans  &trans  &trans
+            >;
+
+            label = "num";
+        };
+
+        nav {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -88,11 +99,13 @@
 
             display-name = "navn";
             bindings = <
-&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp PLUS        &kp NUMBER_1         &kp NUMBER_2           &kp NUMBER_3    &kp NUMBER_4  &kp N5
-&none    &trans  &trans  &trans  &trans  &none      &rhm HOME LEFT  &rhm PAGE_DOWN DOWN  &rhm PAGE_UP UP_ARROW  &rhm END RIGHT  &none         &none
-&kp F12  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp MINUS       &kp NUMBER_6         &kp NUMBER_7           &kp NUMBER_8    &kp NUMBER_9  &kp N0
-                         &trans  &trans  &trans     &trans          &trans               &trans
+&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp C_BRIGHTNESS_INC  &trans               &trans                 &trans           &trans  &trans
+&trans   &trans  &trans  &trans  &trans  &trans     &rhm HOME LEFT        &rhm PAGE_DOWN DOWN  &rhm PAGE_UP UP_ARROW  &rhm END RIGHT   &trans  &trans
+&kp F12  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp C_BRIGHTNESS_DEC  &kp K_MUTE           &kp C_VOLUME_DOWN      &kp C_VOLUME_UP  &trans  &trans
+                         &trans  &trans  &trans     &trans                &trans               &trans
             >;
+
+            label = "nav";
         };
 
         symbol {
