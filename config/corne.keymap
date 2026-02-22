@@ -55,8 +55,13 @@
         compatible = "zmk,combos";
 
         cmb_inner_thumbs {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <38 39>;
+        };
+
+        metanums {
+            bindings = <&mo 4>;
+            key-positions = <37 40>;
         };
     };
 
@@ -114,6 +119,15 @@
 &trans     &lhm LALT PIPE   &lhm LCTRL LESS_THAN  &lhm LGUI LEFT_BRACKET  &lhm LEFT_SHIFT LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE  &rhm RIGHT_SHIFT RIGHT_PARENTHESIS  &rhm RGUI RIGHT_BRACKET  &rhm RCTRL GREATER_THAN  &trans                 &trans
 &trans     &trans           &trans                &trans                  &trans                            &kp TILDE         &kp SLASH        &trans                              &trans                   &trans                   &trans                 &trans
                                                   &trans                  &trans                            &trans            &trans           &trans                              &trans
+            >;
+        };
+
+        metanums {
+            bindings = <
+&trans  &trans            &trans            &trans            &trans            &trans                  &trans                 &trans            &trans            &trans            &trans            &trans
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)        &kp LG(NUMBER_6)       &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &trans
+&trans  &trans            &trans            &trans            &trans            &kp LG(LEFT_BRACKET)    &kp LG(RIGHT_BRACKET)  &trans            &trans            &trans            &trans            &trans
+                                            &trans            &trans            &trans                  &trans                 &trans            &trans
             >;
         };
 
