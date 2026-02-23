@@ -72,10 +72,10 @@
 
             display-name = "base";
             bindings = <
-&mt TILDE ESC  &kp Q        &kp W         &kp E             &kp R         &kp T                   &kp Y             &kp U               &kp I            &kp O         &kp P           &kp BSPC
-&kp TAB        &lhm LALT A  &lhm LCTRL S  &lhm LGUI D       &lhm LSHFT F  &kp G                   &kp H             &rhm RIGHT_SHIFT J  &rhm RGUI K      &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
-&kp EQUAL      &kp Z        &kp X         &kp C             &kp V         &kp B                   &kp N             &kp M               &kp COMMA        &kp DOT       &kp FSLH        &kp MINUS
-                                          &lt 3 LEFT_ARROW  &lt 2 RET     &kp LS(LA(LC(LGUI)))    &kp LA(LC(LGUI))  &lt 1 SPACE         &kp RIGHT_ARROW
+&kp ESCAPE  &kp Q        &kp W         &kp E             &kp R         &kp T                                    &kp Y             &kp U               &kp I              &kp O         &kp P           &kp BSPC
+&kp TAB     &lhm LALT A  &lhm LCTRL S  &lhm LGUI D       &lhm LSHFT F  &kp G                                    &kp H             &rhm RIGHT_SHIFT J  &rhm RGUI K        &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
+&kp EQUAL   &kp Z        &kp X         &kp C             &kp V         &kp B                                    &kp N             &kp M               &kp COMMA          &kp DOT       &kp FSLH        &kp MINUS
+                                       &lt 3 LEFT_ARROW  &lt 2 RET     &kp_hold_caps_word LS(LA(LC(LGUI))) 0    &kp LA(LC(LGUI))  &lt 1 SPACE         &lt 3 RIGHT_ARROW
             >;
         };
 
