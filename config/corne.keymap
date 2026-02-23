@@ -111,7 +111,7 @@
         sym {
             bindings = <
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN           &kp POUND               &kp DOLLAR                        &kp PERCENT       &kp CARET        &kp AMPERSAND                       &kp ASTERISK             &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS  &trans
-&trans     &lhm LALT PIPE   &lhm LCTRL LESS_THAN  &lhm LGUI LEFT_BRACKET  &lhm LEFT_SHIFT LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE  &rhm RIGHT_SHIFT RIGHT_PARENTHESIS  &rhm RGUI RIGHT_BRACKET  &rhm RCTRL GREATER_THAN  &trans                 &trans
+&trans     &lhm LALT PIPE   &lhm LCTRL LESS_THAN  &lhm LGUI LEFT_BRACKET  &lhm LEFT_SHIFT LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE  &rhm RIGHT_SHIFT RIGHT_PARENTHESIS  &rhm RGUI RIGHT_BRACKET  &rhm RCTRL GREATER_THAN  &kp BACKSLASH          &trans
 &trans     &trans           &trans                &trans                  &trans                            &kp TILDE         &kp SLASH        &trans                              &trans                   &trans                   &trans                 &trans
                                                   &trans                  &trans                            &trans            &trans           &trans                              &trans
             >;
