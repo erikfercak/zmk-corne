@@ -53,7 +53,7 @@
 
         kp_hold_num_word: kp_hold_num_word {
             compatible = "zmk,behavior-hold-tap";
-            label = "KP_HOLD_CAPS_WORD";
+            label = "KP_HOLD_NUM_WORD";
             bindings = <&kp>, <&num_word>;
 
             #binding-cells = <2>;
