@@ -103,7 +103,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans    &kp ASTERISK  &mt LG(N7) N7  &mt LG(N8) N8  &mt LG(N9) N9  &mt LG(MINUS) MINUS  &trans
 &trans  &trans  &trans     &trans     &trans     &trans    &kp SLASH     &mt LG(N4) N4  &mt LG(N5) N5  &mt LG(N6) N6  &mt LG(PLUS) PLUS    &trans
 &trans  &trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &kp EQUAL     &mt LG(N1) N1  &mt LG(N2) N2  &mt LG(N3) N3  &trans               &trans
-                           &trans     &trans     &trans    &trans        &kp DOT        &mt LG(N0) N0
+                           &trans     &trans     &trans    &trans        &mt LG(N0) N0  &kp DOT
             >;
 
             label = "NUM";
