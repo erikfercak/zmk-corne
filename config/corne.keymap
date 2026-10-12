@@ -91,54 +91,54 @@
 
             display-name = "base";
             bindings = <
-&kp ESCAPE  &kp Q        &kp W         &kp E             &kp R         &kp T                                    &kp Y                                     &kp U               &kp I              &kp O         &kp P           &kp BSPC
-&kp TAB     &lhm LALT A  &lhm LCTRL S  &lhm LGUI D       &lhm LSHFT F  &kp G                                    &kp H                                     &rhm RIGHT_SHIFT J  &rhm RGUI K        &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
-&kp EQUAL   &kp Z        &kp X         &kp C             &kp V         &kp B                                    &kp N                                     &kp M               &kp COMMA          &kp DOT       &kp FSLH        &kp MINUS
-                                       &lt 3 LEFT_ARROW  &lt 2 RET     &kp_hold_caps_word LS(LA(LC(LGUI))) 0    &kp_hold_num_word LA(LC(LGUI)) 1  &lt 1 SPACE         &lt 3 RIGHT_ARROW
+&kp ESCAPE  &kp Q        &kp W         &kp E             &kp R         &kp T                                    &kp Y                             &kp U               &kp I            &kp O         &kp P           &kp BSPC
+&kp TAB     &lhm LALT A  &lhm LCTRL S  &lhm LGUI D       &lhm LSHFT F  &kp G                                    &kp H                             &rhm RIGHT_SHIFT J  &rhm RGUI K      &rhm RCTRL L  &rhm RALT SEMI  &kp SQT
+&kp GRAVE   &kp Z        &kp X         &kp C             &kp V         &kp B                                    &kp N                             &kp M               &kp COMMA        &kp DOT       &kp FSLH        &kp MINUS
+                                       &lt 1 LEFT_ARROW  &lt 2 RET     &kp_hold_caps_word LS(LA(LC(LGUI))) 0    &kp_hold_num_word LA(LC(LGUI)) 1  &lt 3 SPACE         &kp RIGHT_ARROW
             >;
         };
 
-        num {
+        Numpad {
             bindings = <
-&trans  &kp FSLH        &kp N7  &kp N8  &kp N9   &kp ASTERISK    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp MINUS       &kp N4  &kp N5  &kp N6   &kp PLUS        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp UNDERSCORE  &kp N1  &kp N2  &kp N3   &kp EQUAL       &trans  &trans  &trans  &trans  &trans  &trans
-                                &kp N0  &kp DOT  &trans          &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &kp ASTERISK  &mt LG(N7) N7  &mt LG(N8) N8  &mt LG(N9) N9  &mt LG(MINUS) MINUS  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &kp SLASH     &mt LG(N4) N4  &mt LG(N5) N5  &mt LG(N6) N6  &mt LG(PLUS) PLUS    &trans
+&trans  &trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &kp EQUAL     &mt LG(N1) N1  &mt LG(N2) N2  &mt LG(N3) N3  &trans               &trans
+                           &trans     &trans     &trans    &trans        &kp DOT        &mt LG(N0) N0
             >;
 
-            label = "num";
+            label = "NUM";
         };
 
-        nav {
+        Navigation {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "navn";
+            display-name = "NAV";
             bindings = <
-&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp C_BRIGHTNESS_INC  &trans               &trans                 &trans           &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans     &rhm HOME LEFT        &rhm PAGE_DOWN DOWN  &rhm PAGE_UP UP_ARROW  &rhm END RIGHT   &trans  &trans
-&kp F12  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp C_BRIGHTNESS_DEC  &kp K_MUTE           &kp C_VOLUME_DOWN      &kp C_VOLUME_UP  &trans  &trans
-                         &trans  &trans  &trans     &trans                &trans               &trans
+&trans  &mt F11 F1  &mt F12 F2  &kp F3  &kp F4  &kp F5    &kp F6          &kp F7               &kp F8                 &kp F9           &kp F10  &trans
+&trans  &trans      &trans      &trans  &trans  &trans    &rhm HOME LEFT  &rhm PAGE_DOWN DOWN  &rhm PAGE_UP UP_ARROW  &rhm END RIGHT   &trans   &trans
+&trans  &trans      &trans      &trans  &trans  &trans    &trans          &kp K_MUTE           &kp C_VOLUME_DOWN      &kp C_VOLUME_UP  &trans   &trans
+                                &trans  &trans  &trans    &trans          &trans               &trans
             >;
 
-            label = "nav";
+            label = "NAV";
         };
 
-        sym {
+        Symbol {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN           &kp POUND               &kp DOLLAR                        &kp PERCENT       &kp CARET        &kp AMPERSAND                       &kp ASTERISK             &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS  &trans
-&trans     &lhm LALT PIPE   &lhm LCTRL LESS_THAN  &lhm LGUI LEFT_BRACKET  &lhm LEFT_SHIFT LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE  &rhm RIGHT_SHIFT RIGHT_PARENTHESIS  &rhm RGUI RIGHT_BRACKET  &rhm RCTRL GREATER_THAN  &kp BACKSLASH          &trans
-&trans     &trans           &trans                &trans                  &trans                            &kp TILDE         &kp SLASH        &trans                              &trans                   &trans                   &trans                 &trans
-                                                  &trans                  &trans                            &trans            &trans           &trans                              &trans
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN           &kp POUND             &kp DOLLAR                        &kp PERCENT         &kp CARET          &kp AMPERSAND                       &kp ASTERISK           &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS       &none
+&none      &lhm LALT PIPE   &lhm LCTRL LESS_THAN  &lhm LGUI LEFT_BRACE  &lhm LEFT_SHIFT LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &rhm RIGHT_SHIFT RIGHT_PARENTHESIS  &rhm RGUI RIGHT_BRACE  &rhm RCTRL GREATER_THAN  &rhm RALT NON_US_BACKSLASH  &kp UNDERSCORE
+&kp TILDE  &none            &none                 &none                 &none                             &kp UNDERSCORE      &kp EQUAL          &none                               &none                  &none                    &kp SLASH                   &kp MINUS
+                                                  &trans                &trans                            &trans              &trans             &trans                              &trans
             >;
 
-            label = "sym";
+            label = "SYM";
         };
 
-        sys {
+        System {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -147,13 +147,13 @@
 
             display-name = "sys";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none        &none   &none   &none  &bt BT_CLR_ALL  &none
-&none       &none         &none         &none         &none         &none           &none        &none   &none   &none  &none           &none
-&sys_reset  &none         &none         &none         &none         &bootloader     &bootloader  &none   &none   &none  &none           &sys_reset
+&none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none        &none   &none   &none  &bt BT_CLR  &bt BT_CLR_ALL
+&none       &none         &none         &none         &none         &none           &none        &none   &none   &none  &none       &none
+&sys_reset  &none         &none         &none         &none         &bootloader     &bootloader  &none   &none   &none  &none       &sys_reset
                                         &trans        &trans        &trans          &trans       &trans  &trans
             >;
 
-            label = "sys";
+            label = "SYS";
         };
     };
 };
